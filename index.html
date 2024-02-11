@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMusic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-*******************" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-dark p-2 text-white">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.jpg" alt="IMusic Logo" width="40" height="40" class="d-inline-block align-top rounded-circle" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html" style="color: white;">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="color: white;">
+                        Courses Offered
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="courses.html">Keyboard/Piano</a></li>
+                        <li><a class="dropdown-item" href="courses.html">Drums</a></li>
+                        <li><a class="dropdown-item" href="courses.html">Guitar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html" aria-current="true" style="color: white;">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row me-4">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupmodal">
+        Sign up
+      </button>
+    </div>
+
+    <div class="modal fade" id="signupmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="signupLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" style="color: black;" id="signupLabel">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" style="color: black;">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword" style="color: black">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+              <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#twitter" />
+                </svg>
+                Sign up with Twitter
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#facebook" />
+                </svg>
+                Sign up with Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <svg class="bi me-1" width="16" height="16">
+                  <use xlink:href="#github" />
+                </svg>
+                Sign up with GitHub
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+    <div class="row me-2">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Login
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" style="color: black;" id="signupLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput" style="color: black;">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword" style="color: black">Password</label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+              <button class=" btn btn-primary" type="submit">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="logo2.jpg" class="d-block w-100" style="height: 400px;" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="color:azure">
+            <h5>Learn The Music in Technical Way </h5>
+            <p>Two session are free to attend!!!!</p>
+            <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#signupmodal" role="button">Rigester</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="drums.jpg" class="d-block w-100" style="height: 400px;" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sign Up gor free!!</h5>
+            <a class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#signupmodal" role="button">Rigester</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row mb-2 mt-4" style="color:blue">
+    <div class="col-md-4">
+      <h2>Courses Offered</h2>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="row mb-2">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h6>IMusic Academy's Keyboard/Piano Courses:</h6>
+            Dive into the enchanting world of keys
+            with IMusic Academy. Our expertly crafted courses offer tailored curriculum, flexible learning options,
+            and expert guidance. Access comprehensive resources and unlock your musical potential. Join us today to
+            embark on a transformative musical journey!</p>
+            <a class="btn btn-outline-success" href="courses.html" role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h6> Your Way to Success: Guitar Courses at IMusic Academy</h6>
+            Explore the art of guitar playing at IMusic Academy. Our courses offer tailored curriculum, flexible
+            learning options, and expert guidance. Access comprehensive resources and unlock your musical potential.
+            Join us today and unleash your inner guitarist!</p>
+            <a class="btn btn-outline-success" href="courses.html" role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h6> Drum Courses at IMusic Academy</h6>
+            Discover the rhythm within with IMusic Academy's drum courses. Tailored curriculum, flexible learning, and
+            expert guidance await. Access comprehensive resources and unlock your drumming potential. Join us today
+            and start your percussive journey!</p>
+            <a class="btn btn-outline-success" href="courses.html" role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span>&copy; IMusic. All rights reserved.</span>
+          <p>IMusic Accedamy Near Vidya Vikas college Mysuru 570028</p>
+          <span>96864949824</span>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
